@@ -1,0 +1,70 @@
+.input-container {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+  border: 2px solid black;
+  padding: 8px;
+}
+
+.input-container > label {
+  display: flex;
+  flex-basis: 100%;
+  flex-direction: column;
+  margin-bottom: 8px;
+  color: dodgerblue;
+  font-size: large;
+  font-weight: bold;
+}
+
+.input-container > button {
+  width: 50%;
+  height: 24px;
+  border: 2px solid dodgerblue;
+  background-color: inherit;
+  color: dodgerblue;
+  align-self: center;
+  position: relative;
+}
+
+.input-container > button:hover {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: solid 2px black;
+}
+
+header {
+  border-bottom: solid 2px black;
+  padding-left: 24px;
+}
+
+.content {
+  display: flex;
+}
+
+.menu {
+  width: 300px;
+  border-right: solid 2px black;
+}
+
+.menu-item {
+  margin: 5px;
+  padding: 3px;
+  border: solid 1px lightslategray;
+}
+
+.menu-item:hover, .menu-item.active {
+  color: white;
+  background: dodgerblue;
+  cursor: pointer;
+}
+
+.view {
+  padding: 5px;
+}

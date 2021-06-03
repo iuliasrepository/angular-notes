@@ -1,0 +1,27 @@
+<div class="input-container">
+  <label for="note-title">Заголовок<input id="note-title" [(ngModel)]="nTitle" placeholder="Поле обязательно для заполнения"></label>
+  <label for="note-text">Текст<textarea id="note-text" [(ngModel)]="nText" placeholder="Поле обязательно для заполнения"></textarea></label>
+  <button id="addNote" data-warning="Заполните поля!" (click)="nTitle && nText && add()">Добавить</button>
+</div>
+
+<div class="container">
+  <header>
+    <h1>
+      Мои заметки
+    </h1>
+  </header>
+  <div class="content" role="main">
+    <div class="menu">
+      <div class="menu-item"
+        *ngFor="let note of notes"
+           [routerLink]="['note', note.id]"
+           routerLinkActive="active"
+      > {{ note.title }} </div>
+    </div>
+    <div class="view" >
+      <router-outlet>
+      </router-outlet>
+
+    </div>
+  </div>
+</div>
