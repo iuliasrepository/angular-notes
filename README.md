@@ -1,27 +1,17 @@
 # NotesAngular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.2.
+Тестовое задание на angular 9.
 
-## Development server
+### Задача: используя фреймворк Angular 9 сверстать веб-приложение для просмотра текстовых заметок.
+Интерфейс приложения должен состоять из трех компонентов:
+1) верхняя шапка с названием;
+2) боковое меню со списком заметок;
+3) область для просмотра выбранной заметки;
+Список заметок должен быть предустановлен вами, каждая заметка имеет заголовок и текст. В боковом меню выводятся заголовки, при выборе одного из них - справа выводится текст выбранной заметки. Тексты и заголовки могут быть прописаны прямо в HTML, ваша задача будет только скрывать и показывать нужные. Реализация добавления и редактирования не требуется.
+Интерфейс должен растягиваться на всё окно браузера, при этом шапка имеет фиксированную высоту, а боковое меню - фиксированную ширину.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Не обязательно, но будет жирным плюсом, если:
+1) реализуете хранение предустановленных заметок в виде массива объектов, а не в HTML;
+2) реализуете возможность добавления заметок;
+3) реализуете возможность доступа к каждой заметке по прямой ссылке.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
